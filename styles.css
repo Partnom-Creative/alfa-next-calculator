@@ -9,7 +9,7 @@ body {
     padding: 40px;
     border-radius: 12px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    max-width: 1200px;
+    max-width: 100%;
     margin: 40px auto;
 }
 .profile-buttons {
@@ -65,7 +65,7 @@ label {
     font-weight: 500;
     color: #333;
 }
-@media (max-width: 1400px) {
+@media (max-width: 768px) {
     .charts-container {
         grid-template-columns: 1fr;
     }
