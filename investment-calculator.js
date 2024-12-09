@@ -23,10 +23,10 @@ function initializeCharts() {
             datasets: [{
                 label: 'Investment Value',
                 data: [],
-                borderColor: '#5ED4D3',
-                backgroundColor: '#5ED4D3',
-                pointBackgroundColor: '#5ED4D3',
-                pointBorderColor: '#5ED4D3',
+                borderColor: '#000000',
+                backgroundColor: '#000000',
+                pointBackgroundColor: '#000000',
+                pointBorderColor: '#000000',
                 pointRadius: 4,
                 pointHoverRadius: 6,
                 tension: 0.3,
@@ -43,7 +43,8 @@ function initializeCharts() {
                     labels: {
                         boxWidth: 50,
                         usePointStyle: true,
-                        pointStyle: 'line'
+                        pointStyle: 'line',
+                        color: '#000000'
                     }
                 },
                 title: {
@@ -62,12 +63,12 @@ function initializeCharts() {
                         callback: value => '€' + value.toLocaleString()
                     },
                     grid: {
-                        color: '#E5E5E5'
+                        color: '#E6E2D7'
                     }
                 },
                 x: {
                     grid: {
-                        color: '#E5E5E5'
+                        color: '#E6E2D7'
                     }
                 }
             }
@@ -80,7 +81,7 @@ function initializeCharts() {
             labels: ['Traditional Portfolio', 'Alfa Next Portfolio'],
             datasets: [{
                 data: [8, 25],
-                backgroundColor: ['#f4f1eb', '#f4f1eb'],
+                backgroundColor: ['#EDE1C5', '#EDE1C5'],
                 barThickness: 40,
                 borderRadius: 20
             }]
@@ -98,6 +99,14 @@ function initializeCharts() {
                     max: 30,
                     ticks: {
                         callback: value => value + '%'
+                    },
+                    grid: {
+                        color: '#E6E2D7'
+                    }
+                },
+                x: {
+                    grid: {
+                        color: '#E6E2D7'
                     }
                 }
             }
